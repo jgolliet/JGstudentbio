@@ -1,0 +1,227 @@
+/* Sets max-width to 960 for all content (except header), centers, and adds white background */
+div { 
+    max-width: 960px; 
+    margin: auto;
+    background: white;
+    }
+   
+
+  /* Header */
+  /* Header style - adds background color, padding, and bottom border */ 
+  header {
+    background-color: #ffffff; 
+    overflow: hidden; /* Removes scroll bar from header  */
+    border-bottom:1px solid #dddddd;
+    padding-bottom:10px;
+  }
+  
+  /* Clears h1 and nav bar */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Adds styling to h1 (name) */
+  h1 {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    padding: 25px;
+    font-size:32px;
+    background-color: #4aaaa5;
+    color:#ffffff;
+    display: inline;
+    position: relative; 
+    float: left;
+    top: 32px;  /*  Moves inline with navigation links */
+  }
+  
+  /* Nav bar styling */
+  .nav {
+    display: inline-block;  /* Puts navigation links inline horizontally instead of vertically */
+    float: right; 
+    position: relative; 
+    overflow: hidden;
+    top: 65px;
+  }
+  
+  /* Navigation links positioning */
+  ul li { 
+    display: inline-block;
+    margin-left: 20px; 
+    top: 10px;
+  }
+  
+  /* Removes bullet points from list */
+  li {
+    list-style: none;
+  }
+  
+  /* Styles nav links and removes underline */
+  li a {
+    color: #777777;
+    text-decoration: none;
+    padding: 10px;
+    
+  }
+  
+  /* Changes link font and background color on hover */
+  a:hover {
+    background-color: #4aaaa5;;
+    color: white;
+  }
+  
+  /* Adds dividers between top nav links */
+  nav li + li:before{
+    content: " | ";
+    text-align: center;
+    padding-right: 20px;
+  } 
+  
+
+  
+  /* About section styling */
+  .about {
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+  }
+  
+  /* Makes h2 teal, positions it, and sets font */
+  h2 {
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 10px;
+    padding: 20px;
+    position: relative;
+    top: 10px;
+    margin-top: 20px;
+  }
+  
+  /* Adds line break beneath h2 */
+  hr {
+    width: 95%;
+    border: 1.5px solid #dddddd;
+  }
+  
+  /* Profile photo style */
+  #profilephoto {
+      object-fit: cover;
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      margin: 0 auto;
+      padding: 20px; 
+      float: left;
+    }
+  
+  /* About Me paragraph */  
+  .bio {
+    margin: 10px;
+    padding: 20px;
+  }
+    
+ 
+  
+  /* Portfolio */
+  /* Portfolio grid styling */
+  
+  .row {
+    display: flex;
+  }
+  
+  .column {
+    margin: 10px;
+  }
+  
+  /* Image styling  */
+  img {
+    padding: 10px; 
+    padding-left: 10px;
+    margin-left: 10px;
+  }
+  
+  /* Container holding the image and the text */
+  .image {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Adds style to text blocks over portfolio images and moves to bottom-center */
+  .bottom-center {
+    position: absolute;
+    bottom: 30px;
+    width: 246px; 
+    height: 30px;
+    left: 20px;
+    padding: 12px;
+    background: #4aaaa5;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+  }
+  
+  .portfolio {
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+  }
+  
+ 
+   /* Contact form styling */
+  .contactform {
+    max-width: 960px; 
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+  }
+  
+  /* Puts container around form to decrease width of text boxes  */
+  .container {
+    width: 860px;
+  }
+  
+  /* Styles the text boxes in the form */
+  input[type=text], select, textarea {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #dddddd; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px;  
+  }
+  
+  /* Styles the "submit button" */
+  input[type=submit] {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 10px 35px;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker grey color */
+  input[type=submit]:hover {
+    background-color: #666666;
+  }
+  
+  
+  
+  /* Footer */
+  /* Styles footer and fixes it to bottom */
+  .footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    background-color: #666666;
+    border-top: 8px solid #4aaaa5;
+    box-shadow: 0 50vh 0 50vh white; /* Extends footer to full width of page and makes background white */
+    }
+  
+  #copyright {
+    color: white;
+    font-size: 12px;
+    position: relative; 
+    top: 10px; 
+  }
